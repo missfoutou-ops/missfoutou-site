@@ -2,17 +2,14 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "assets/gallery"
-public_folder: "/assets/gallery"
+media_folder: "assets"
+public_folder: "/assets"
 
 collections:
-  - name: "menus"
-    label: "Menu"
-    folder: "assets/gallery"
+  - name: "media"
+    label: "Bibliothèque d'images"
+    label_singular: "Image"
+    folder: "assets"
     create: true
-    slug: "{{slug}}"
     fields:
-      - { label: "Nom du plat", name: "title", widget: "string" }
-      - { label: "Description", name: "description", widget: "text" }
-      - { label: "Prix", name: "price", widget: "number" }
-      - { label: "Image", name: "image", widget: "image" }
+      - { label: "Fichier", name: "image", widget: "image" }
