@@ -7,9 +7,10 @@ public_folder: "/assets"
 
 collections:
   - name: "media"
-    label: "Bibliothèque d'images"
-    label_singular: "Image"
-    folder: "assets"
+    label: "Images du site"
+    folder: "assets/gallery"
     create: true
+    slug: "{{slug}}"
     fields:
-      - { label: "Fichier", name: "image", widget: "image" }
+      - { label: "Titre", name: "title", widget: "string" }
+      - { label: "Image", name: "image", widget: "image" }
