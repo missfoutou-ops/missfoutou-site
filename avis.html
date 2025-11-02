@@ -1,0 +1,62 @@
+<!DOCTYPE html><html lang="fr"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Avis • Miss Foutou</title>
+<meta name="description" content="Laissez un avis sur Miss Foutou à Belfort."/>
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Restaurant", "name": "Miss Foutou", "address": "9 rue du Rhône, 90000 Belfort, France", "telephone": "+33 7 83 71 37 41", "email": "missfoutou@gmail.com", "servesCuisine": ["Ivoirienne", "Africaine", "Ouest-africaine"], "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"], "opens": "09:00", "closes": "23:30"}], "priceRange": "€€"}</script>
+</head><body><div class="top-banner">🛵 À emporter & livraison — frais de livraison 5€ (offerts dès 50€)</div>
+<nav class="nav">
+  <a class="logo" href="index.html"><img src="assets/logo_duotone.png" alt="Miss Foutou" /></a>
+  <input id="nav-toggle" type="checkbox" aria-label="Ouvrir le menu">
+  <label for="nav-toggle" class="burger" aria-hidden="true">☰</label>
+  <ul class="links">
+    <li><a href="menu.html">Menu</a></li>
+    <li><a href="about.html">À propos</a></li>
+    <li><a href="gallery.html">Galerie</a></li>
+    <li><a href="avis.html">Avis</a></li>
+    <li><a class="btn" href="contact.html">Réserver</a></li>
+  </ul>
+</nav>
+<header class="page-hero"><h1>Vos avis comptent pour nous</h1>
+<p>Partagez votre expérience chez Miss Foutou — vos retours nous aident à nous améliorer.</p></header>
+<section class="container narrow">
+  <form class="form" method="POST" action="https://formspree.io/f/your-endpoint">
+    <div class="row">
+      <label>Nom<input type="text" name="name" required></label>
+      <label>Note<select name="rating" required>
+        <option value="">Choisir…</option><option>⭐⭐⭐⭐⭐</option><option>⭐⭐⭐⭐</option><option>⭐⭐⭐</option><option>⭐⭐</option><option>⭐</option>
+      </select></label>
+    </div>
+    <label>Votre avis<textarea name="message" rows="5" required></textarea></label>
+    <input type="hidden" name="_subject" value="Nouvel avis - Miss Foutou">
+    <button class="btn" type="submit">Envoyer mon avis</button>
+  </form>
+</section>
+<section class="container">
+  <h2>🌟 Témoignages</h2>
+  <div class="reviews">
+    <article class="review"><strong>Aïcha</strong> — ⭐⭐⭐⭐⭐<p>Le foutou est incroyable, accueil chaleureux !</p></article>
+    <article class="review"><strong>Samuel</strong> — ⭐⭐⭐⭐<p>Bissap excellent. Un peu d'attente mais ça vaut le coup.</p></article>
+    <article class="review"><strong>Fatou</strong> — ⭐⭐⭐⭐⭐<p>Plats halal et très savoureux. Je recommande.</p></article>
+  </div>
+</section>
+<footer class="footer">
+  <div class="col">
+    <h4>Miss Foutou</h4>
+    <p>9 rue du Rhône, 90000 Belfort, France</p>
+    <p>WhatsApp: <a href="https://wa.me/33783713741">+33 7 83 71 37 41</a> · <a href="https://wa.me/33769202055">+33 7 69 20 20 55</a><br>E-mail: <a href="mailto:missfoutou@gmail.com">missfoutou@gmail.com</a></p>
+    <p class="badge">🛵 À emporter & livraison — frais de livraison 5€ (offerts dès 50€)</p>
+  </div>
+  <div class="col">
+    <h4>Horaires</h4>
+    <ul class="hours"><li><span>Lun-Dim</span><span>09:00–23:30</span></li></ul>
+  </div>
+  <div class="col">
+    <h4>Suivez-nous</h4>
+    <p><a href="https://www.tiktok.com/@miss.foutou">TikTok</a> · <a href="https://snapchat.com/t/765V2Vjw">Snapchat</a></p>
+  </div>
+  <p class="legal">© 2025 Miss Foutou. Tous droits réservés.</p>
+</footer>
+<script src="assets/script.js"></script></body></html>
