@@ -1,0 +1,34 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets"
+public_folder: "/assets"
+
+collections:
+  - name: "pages"
+    label: "Pages du site"
+    files:
+      - name: "menu"
+        label: "Carte / Menu"
+        file: "menu.html"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+
+      - name: "accueil"
+        label: "Accueil"
+        file: "index.html"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+
+      - name: "a-propos"
+        label: "À propos"
+        file: "about.html"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
+
+      - name: "avis"
+        label: "Avis"
+        file: "avis.html"
+        fields:
+          - {label: "Contenu", name: "body", widget: "markdown"}
