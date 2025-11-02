@@ -1,0 +1,24 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets" # Où les images seront envoyées
+public_folder: "/assets"
+
+collections:
+  - name: "pages"
+    label: "Pages du site"
+    files:
+      - file: "index.html"
+        label: "Accueil"
+        name: "accueil"
+        editor:
+          preview: false
+      - file: "menu.html"
+        label: "Menu"
+        name: "menu"
+        editor:
+          preview: false
+      - file: "about.html"
+        label: "À propos"
+        name
