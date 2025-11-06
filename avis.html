@@ -22,7 +22,8 @@
 <header class="page-hero"><h1>Vos avis comptent pour nous</h1>
 <p>Partagez votre expérience chez Miss Foutou — vos retours nous aident à nous améliorer.</p></header>
 <section class="container narrow">
-  <form class="form" method="POST" action="https://formspree.io/f/your-endpoint">
+ <form class="form" name="avis" method="POST" data-netlify="true">
+  <input type="hidden" name="form-name" value="avis">
     <div class="row">
       <label>Nom<input type="text" name="name" required></label>
       <label>Note<select name="rating" required>
