@@ -10,14 +10,13 @@ exports.handler = async () => {
     };
   }
 
-  try {
-    const response = await fetch(
-      https://api.netlify.com/api/v1/forms/${NETLIFY_FORM_ID}/submissions,
-      {
-        headers: {
-          Authorization: Bearer ${NETLIFY_TOKEN}
-        }
-      }
+ const response = await fetch(
+  https://api.netlify.com/api/v1/forms/${NETLIFY_FORM_ID}/submissions,
+  {
+    headers: {
+      Authorization: Bearer ${NETLIFY_TOKEN}
+    }
+  }
     );
 
     const submissions = await response.json();
